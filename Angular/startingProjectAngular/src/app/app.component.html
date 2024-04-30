@@ -1,7 +1,17 @@
 <div>
 <app-header></app-header>
-  <main>
-    <h2>Time to get started!</h2>
-  </main>
+<main>
+  <section id="core-concepts">
+  <h2>Core Concepts</h2>
+  <ul>
+    <app-detailcore [Concept]="GetConcept(0)"/>
+    <app-detailcore [Concept]="GetConcept(1)"/>
+    <app-detailcore [Concept]="GetConcept(2)"/>
+    <app-detailcore [Concept]="GetConcept(3)"/>
+
+  </ul>
+  </section>
+
+</main>
 </div>
 <router-outlet></router-outlet>

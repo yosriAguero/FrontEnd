@@ -8,11 +8,11 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   private reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
 
-  private genRandomInt(max : number) {
+  private genRandomInt(max: number) {
     return Math.floor(Math.random() * (max + 1));
   }
 
   public Description = this.reactDescriptions[this.genRandomInt(2)];
   imgReact = '../assets/react-core-concepts.png';
-  
+
 }
