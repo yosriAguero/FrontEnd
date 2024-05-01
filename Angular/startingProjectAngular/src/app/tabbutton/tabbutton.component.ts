@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-tabbutton',
@@ -7,8 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class TabbuttonComponent {
 @Input() Label!: string;
+@Output() selected : EventEmitter<string> = new EventEmitter<string>();
 public clickHandler()
 {
-alert(this.Label);
+  this.selected.emit(this.Label);
 }
+
 }

@@ -14,10 +14,10 @@
   <section id="examples">
     <h2>Examples</h2>
     <menu>
-      <app-tabbutton [Label]='Components'></app-tabbutton>
-      <app-tabbutton [Label]='JSX'>JSX</app-tabbutton>
-      <app-tabbutton [Label]='Props'>Props</app-tabbutton>
-      <app-tabbutton [Label]='State'>State</app-tabbutton>
+      <app-tabbutton (selected)="receiveMessage($event)" [Label]='Components'></app-tabbutton>
+      <app-tabbutton (selected)="receiveMessage($event)" [Label]='JSX'>JSX</app-tabbutton>
+      <app-tabbutton (selected)="receiveMessage($event)" [Label]='Props'>Props</app-tabbutton>
+      <app-tabbutton (selected)="receiveMessage($event)" [Label]='State'>State</app-tabbutton>
     </menu>
    </section>
 </main>
