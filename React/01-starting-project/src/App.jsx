@@ -1,7 +1,8 @@
 import componentImg from './assets/components.png'
 import { CORE_CONCEPTS } from './data';
-import DetailCore from "./DetailCore";
-import Header from "./Header";
+import DetailCore from "./component_jsx/DetailCore";
+import Header from "./component_jsx/Header";
+import TabButton from './component_jsx/TabButton';
 
 function App() {
   return (
@@ -11,13 +12,27 @@ function App() {
         <section id="core-concepts">
         <h2>Core Concepts</h2>
         <ul>
-          <DetailCore title={CORE_CONCEPTS[0].title} description={CORE_CONCEPTS[0].description} image={CORE_CONCEPTS[0].image}/>
-          <DetailCore title={CORE_CONCEPTS[1].title} description={CORE_CONCEPTS[1].description} image={CORE_CONCEPTS[1].image}/>
-          <DetailCore title={CORE_CONCEPTS[2].title} description={CORE_CONCEPTS[2].description} image={CORE_CONCEPTS[2].image}/>
+          <DetailCore {...CORE_CONCEPTS[0]}/>
+          <DetailCore {...CORE_CONCEPTS[1]}/>
+          <DetailCore {...CORE_CONCEPTS[2]}/>
         </ul>
-        </section>
-      
+        </section>    
       </main>
+     <section id="examples">
+      <h2>Examples</h2>
+      <menu>
+        <TabButton>Components</TabButton>
+        <TabButton>JSX</TabButton>
+        <TabButton>Props</TabButton>
+        <TabButton>State</TabButton>
+      </menu>
+     </section>
+
+
+
+
+
+
     </div>
   );
 }

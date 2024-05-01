@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { DetailcoreComponent } from './detailcore/detailcore.component';
+import { TabbuttonComponent } from './tabbutton/tabbutton.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    DetailcoreComponent
+    DetailcoreComponent,
+    TabbuttonComponent
   ],
   imports: [
     BrowserModule,
