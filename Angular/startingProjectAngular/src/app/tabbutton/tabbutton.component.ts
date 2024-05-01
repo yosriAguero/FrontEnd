@@ -7,4 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class TabbuttonComponent {
 @Input() Label!: string;
+public clickHandler()
+{
+alert(this.Label);
+}
 }
