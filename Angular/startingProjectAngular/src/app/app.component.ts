@@ -14,7 +14,7 @@ Components: string = "Components";
 JSX: string = "JSX";
 Props: string = "Props";
 State: string = "State";
-
+Selected: string = "Please select a button";
 
 
 GetConcept(arg0: number) {
@@ -23,8 +23,8 @@ return getCORE_CONCEPTS()[arg0];
 }
 
 receiveMessage(message: string) {
-  console.log('Message from ChildComponent:', message);
-  alert(message);
+  console.log(message);
+  this.Selected = message;
 }
 
 
